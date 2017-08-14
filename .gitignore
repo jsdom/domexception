@@ -1,0 +1,5 @@
+/node_modules/
+/lib/DOMException.js
+/lib/utils.js
+/npm-debug.log
+/test/web-platform-tests/
