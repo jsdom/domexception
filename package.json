@@ -23,6 +23,9 @@
     "test": "mocha",
     "lint": "eslint lib"
   },
+  "dependencies": {
+    "webidl-conversions": "^4.0.2"
+  },
   "devDependencies": {
     "eslint": "^4.3.0",
     "mkdirp": "^0.5.1",
