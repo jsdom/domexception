@@ -19,7 +19,8 @@
   ],
   "scripts": {
     "prepublish": "node scripts/generate.js",
-    "pretest": "npm run prepublish",
+    "init-wpt": "node scripts/get-latest-platform-tests.js",
+    "pretest": "npm run prepublish && npm run init-wpt",
     "test": "mocha",
     "lint": "eslint lib"
   },
