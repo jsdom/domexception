@@ -27,10 +27,10 @@
     "webidl-conversions": "^4.0.2"
   },
   "devDependencies": {
-    "eslint": "^4.3.0",
+    "eslint": "^6.7.0",
     "mkdirp": "^0.5.1",
-    "mocha": "^3.5.0",
-    "request": "^2.81.0",
-    "webidl2js": "^7.2.0"
+    "mocha": "^6.2.2",
+    "request": "^2.88.0",
+    "webidl2js": "^11.0.0"
   }
 }
