@@ -13,8 +13,10 @@
   "author": "Domenic Denicola <d@domenic.me> (https://domenic.me/)",
   "license": "MIT",
   "repository": "jsdom/domexception",
-  "main": "lib/public-api.js",
+  "main": "index.js",
   "files": [
+    "index.js",
+    "webidl2js-wrapper.js",
     "lib/"
   ],
   "scripts": {

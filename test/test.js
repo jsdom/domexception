@@ -5,8 +5,8 @@ const vm = require("vm");
 
 const testharness = require("./testharness.js");
 
-const SharedDOMException = require("../lib/index");
-const WrapperDOMException = require("../lib/webidl2js-wrapper");
+const SharedDOMException = require("../index");
+const WrapperDOMException = require("../webidl2js-wrapper");
 
 const wptDir = path.resolve(__dirname, "web-platform-tests");
 
