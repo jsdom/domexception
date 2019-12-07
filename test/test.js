@@ -2,6 +2,7 @@
 const fs = require("fs");
 const path = require("path");
 const vm = require("vm");
+const assert = require("assert");
 
 const testharness = require("./testharness.js");
 
@@ -63,16 +64,21 @@ describe("Shared", () => {
 
 describe("webidl2js Wrapper", () => {
   it("throws when installing DOMException on a global object without an Error constructor", () => {
-    testharness.assert_throws(new Error(), () => {
-      WrapperDOMException.install({});
-    });
+    const badGlobal = {};
+    assert.throws(() => {
+      WrapperDOMException.install(badGlobal);
+    }, Error);
+
+    assert.equal("DOMException" in badGlobal, false);
   });
 
   it("throws when installing DOMException on a global object with an invalid Error constructor", () => {
-    testharness.assert_throws(new Error(), () => {
-      const Error = {};
-      WrapperDOMException.install({ Error });
-    });
+    const badGlobal = { Error: {} };
+    assert.throws(() => {
+      WrapperDOMException.install(badGlobal);
+    }, Error);
+
+    assert.equal("DOMException" in badGlobal, false);
   });
 
   runWPT(createWrapperSandbox);
