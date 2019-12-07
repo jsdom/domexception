@@ -12,4 +12,4 @@ function installOverride(globalObject) {
   Object.setPrototypeOf(globalObject.DOMException.prototype, globalObject.Error.prototype);
 }
 
-module.exports = Object.assign({}, DOMException, { install: installOverride });
+module.exports = {...DOMException, install: installOverride };
