@@ -20,11 +20,11 @@ console.assert(DOMException.INUSE_ATTRIBUTE_ERR === 10);
 
 ## APIs
 
-This package exposes 2 flavors of the `DOMException` interface depending on the imported module.
+This package exposes two flavors of the `DOMException` interface depending on the imported module.
 
 ### `domexception` module
 
-This module exports the `DOMException` interface constructor.
+This module default-exports the `DOMException` interface constructor.
 
 ### `domexception/webidl2js-wrapper` module
 

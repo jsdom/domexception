@@ -20,9 +20,9 @@
     "lib/"
   ],
   "scripts": {
-    "prepublish": "node scripts/generate.js",
+    "prepare": "node scripts/generate.js",
     "init-wpt": "node scripts/get-latest-platform-tests.js",
-    "pretest": "npm run prepublish && npm run init-wpt",
+    "pretest": "npm run prepare && npm run init-wpt",
     "test": "mocha",
     "lint": "eslint lib"
   },
