@@ -30,7 +30,7 @@ function createSharedSandbox() {
 
 function createWrapperSandbox() {
   const sandbox = Object.assign({ Error, Object, Function }, testharness);
-  WrapperDOMException.install(sandbox);
+  WrapperDOMException.install(sandbox, ["Window"]);
   return sandbox;
 }
 
@@ -66,7 +66,7 @@ describe("webidl2js Wrapper", () => {
   it("throws when installing DOMException on a global object without an Error constructor", () => {
     const badGlobal = {};
     assert.throws(() => {
-      WrapperDOMException.install(badGlobal);
+      WrapperDOMException.install(badGlobal, ["Window"]);
     }, Error);
 
     assert.equal("DOMException" in badGlobal, false);
@@ -75,7 +75,7 @@ describe("webidl2js Wrapper", () => {
   it("throws when installing DOMException on a global object with an invalid Error constructor", () => {
     const badGlobal = { Error: {} };
     assert.throws(() => {
-      WrapperDOMException.install(badGlobal);
+      WrapperDOMException.install(badGlobal, ["Window"]);
     }, Error);
 
     assert.equal("DOMException" in badGlobal, false);
