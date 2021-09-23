@@ -27,7 +27,7 @@
     "lint": "eslint lib"
   },
   "dependencies": {
-    "webidl-conversions": "^6.1.0"
+    "webidl-conversions": "^7.0.0"
   },
   "devDependencies": {
     "eslint": "^6.7.2",
