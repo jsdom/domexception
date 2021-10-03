@@ -1,10 +1,9 @@
 // https://heycam.github.io/webidl/#idl-DOMException
 
-[
- Exposed=(Window,Worker),
- Constructor(optional DOMString message = "", optional DOMString name = "Error")
-]
+[Exposed=(Window,Worker),
+ Serializable]
 interface DOMException { // but see below note about ECMAScript binding
+  constructor(optional DOMString message = "", optional DOMString name = "Error");
   readonly attribute DOMString name;
   readonly attribute DOMString message;
   readonly attribute unsigned short code;
