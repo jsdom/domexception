@@ -11,13 +11,13 @@ if (process.env.NO_UPDATE) {
 // Pin to specific version, reflecting the spec version in the readme.
 //
 // To get the latest commit:
-// 1. Go to https://github.com/w3c/web-platform-tests/tree/master/WebIDL/ecmascript-binding/es-exceptions
+// 1. Go to https://github.com/web-platform-tests/wpt/tree/master/webidl/ecmascript-binding/es-exceptions
 // 2. Press "y" on your keyboard to get a permalink
 // 3. Copy the commit hash
-const commitHash = "d198d67803096e5252bd31735f57eb4db1c975a9";
+const commitHash = "904652fbaa979e6ac1e3c28b6ca0402b0179f62e";
 
 const urlPrefix = `https://raw.githubusercontent.com/w3c/web-platform-tests/${commitHash}/` +
-                  `WebIDL/ecmascript-binding/es-exceptions/`;
+                  `webidl/ecmascript-binding/es-exceptions/`;
 const targetDir = path.resolve(__dirname, "..", "test", "web-platform-tests");
 
 fs.mkdirSync(targetDir, { recursive: true });
