@@ -20,7 +20,7 @@ exports.assert_false = (actual, message) => {
 
 exports.assert_equals = assert.strictEqual;
 
-exports.assert_throws = (expectedErrorSample, func) => {
+exports.assert_throws_js = (expectedErrorSample, func) => {
   assert.throws(func, actualError => actualError.name === expectedErrorSample.name);
 };
 
