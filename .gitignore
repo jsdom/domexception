@@ -1,5 +1,7 @@
 /node_modules/
+/npm-debug.log
 /lib/DOMException.js
 /lib/utils.js
-/npm-debug.log
+/lib/Function.js
+/lib/VoidFunction.js
 /test/web-platform-tests/

@@ -27,16 +27,15 @@
     "lint": "eslint lib"
   },
   "dependencies": {
-    "webidl-conversions": "^5.0.0"
+    "webidl-conversions": "^7.0.0"
   },
   "devDependencies": {
-    "eslint": "^6.7.2",
-    "mkdirp": "^0.5.1",
-    "mocha": "^6.2.2",
-    "request": "^2.88.0",
-    "webidl2js": "^12.0.0"
+    "eslint": "^7.32.0",
+    "minipass-fetch": "^1.4.1",
+    "mocha": "^9.1.2",
+    "webidl2js": "^16.2.0"
   },
   "engines": {
-    "node": ">=8"
+    "node": ">=12"
   }
 }

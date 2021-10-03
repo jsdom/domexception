@@ -30,7 +30,7 @@ function createSharedSandbox() {
 
 function createWrapperSandbox() {
   const sandbox = Object.assign({ Error, Object, Function }, testharness);
-  WrapperDOMException.install(sandbox);
+  WrapperDOMException.install(sandbox, ["Window"]);
   return sandbox;
 }
 
