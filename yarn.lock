@@ -892,7 +892,7 @@ prelude-ls@^1.2.1:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
 
-prettier@^2.0.4:
+prettier@^2.4.1:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.4.1.tgz#671e11c89c14a4cfc876ce564106c4a6726c9f5c"
   integrity sha512-9fbDAXSBcc6Bs1mZrDYb3XKzDLm4EXXL9sC1LqKP5rZkT6KRr/rf9amVUcODVXgguK/isJz0d0hP72WeaKWsvA==
@@ -1088,29 +1088,24 @@ v8-compile-cache@^2.0.3:
   resolved "https://registry.yarnpkg.com/v8-compile-cache/-/v8-compile-cache-2.3.0.tgz#2de19618c66dc247dcfb6f99338035d8245a2cee"
   integrity sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==
 
-webidl-conversions@^6.1.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-6.1.0.tgz#9111b4d7ea80acd40f5270d666621afa78b69514"
-  integrity sha512-qBIvFLGiBpLjfwmYAaHPXsn+ho5xZnGvyGvsarywGNc8VyQJUMHJ8OBKGGrPER0okBeMDaan4mNBlgBROxuI8w==
-
 webidl-conversions@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-7.0.0.tgz#256b4e1882be7debbf01d05f0aa2039778ea080a"
   integrity sha512-VwddBukDzu71offAQR975unBIGqfKZpM+8ZX6ySk8nYhVoo5CYaZyzt3YBvYtRtO+aoGlqxPg/B87NGVZ/fu6g==
 
-webidl2@^23.12.1:
-  version "23.13.1"
-  resolved "https://registry.yarnpkg.com/webidl2/-/webidl2-23.13.1.tgz#e95aa32e40b2ef71c0f683ea16ddac9202956d98"
-  integrity sha512-u5njf3ZyqPr/4K8D6Cxm3B6MwSgwAdtrzxqHklwKaUdP1aQTmtKN5b65k4wlweJ/pRM6fpKUKYz8RlCJ9tka+w==
+webidl2@^24.1.2:
+  version "24.1.2"
+  resolved "https://registry.yarnpkg.com/webidl2/-/webidl2-24.1.2.tgz#1467a01cf9e6d060ef7240d73b95f5f5627d729d"
+  integrity sha512-AyfWN34VRdJCtcQYK4DAnwU0fFA0BHBEnbdly1PBW941QYN8O+oOx8lf4r1JuPRKuI/vimAzlRxtwTM+ACwnzg==
 
-webidl2js@^16.2.0:
-  version "16.2.0"
-  resolved "https://registry.yarnpkg.com/webidl2js/-/webidl2js-16.2.0.tgz#70ec1e6877d42fd79ada24b574f60210bb7cc410"
-  integrity sha512-+ujeVqKYxe1efW1xmhS0rM4O1rqtoXOqBM3J96v/8SqID65Chwc9QotVaqCJtaIYqGa0B7lBn1kqUIXk52mgPw==
+webidl2js@^17.0.0:
+  version "17.0.0"
+  resolved "https://registry.yarnpkg.com/webidl2js/-/webidl2js-17.0.0.tgz#d0d0f6df2699006e0870ae4ad24f650b73cbca8f"
+  integrity sha512-nfaJ0L1/a4VKzjvLGLNM0Uwo7poXXEcHDcwSaJybcXkmwqCQ+X/58DD7MbgbpisfT/uyFovAGDh5OO7Kh1OkYw==
   dependencies:
-    prettier "^2.0.4"
-    webidl-conversions "^6.1.0"
-    webidl2 "^23.12.1"
+    prettier "^2.4.1"
+    webidl-conversions "^7.0.0"
+    webidl2 "^24.1.2"
 
 which@2.0.2, which@^2.0.1:
   version "2.0.2"

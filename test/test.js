@@ -18,7 +18,7 @@ function instantiateContext(sandbox) {
 }
 
 function createSharedSandbox() {
-  const sandbox = { Error, Object, Function, ...testharness };
+  const sandbox = { Array, Error, Function, Object, Promise, String, TypeError, ...testharness };
   Object.defineProperty(sandbox, "DOMException", {
     value: SharedDOMException,
     enumerable: false,
@@ -29,7 +29,7 @@ function createSharedSandbox() {
 }
 
 function createWrapperSandbox() {
-  const sandbox = { Error, Object, Function, ...testharness };
+  const sandbox = { Array, Error, Function, Object, Promise, String, TypeError, ...testharness };
   WrapperDOMException.install(sandbox, ["Window"]);
   return sandbox;
 }
