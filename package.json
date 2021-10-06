@@ -9,7 +9,7 @@
     "error",
     "exception"
   ],
-  "version": "3.0.0",
+  "version": "4.0.0",
   "author": "Domenic Denicola <d@domenic.me> (https://domenic.me/)",
   "license": "MIT",
   "repository": "jsdom/domexception",
